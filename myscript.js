@@ -1,4 +1,5 @@
 function changeEverything(){
+    
     var heading = document.querySelector('#heading');
     heading.innerHTML = "Jebaited <br> (-1000 Aura)";
     heading.style.color = "red";
@@ -24,4 +25,11 @@ function changeEverything(){
     let audio = new Audio("./ratsongg.mp3");
     audio.loop = "loop";
     audio.play()
+
+    var btn = document.querySelector("#thumbs");
+    btn.src = "./assets/x.png";
+    btn.onclick = stopEvent;
+    function stopEvent(){
+        window.location.reload();
+    }
 }
